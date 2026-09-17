@@ -1,0 +1,54 @@
+SANJIVANI UNIVERSITY
+Mini-Project / Assignment
+Building a LAN in Cisco Packet Tracer
+
+Student Name	Kartik Nitin Pagar
+PRN	2125UCSM1068
+University	Sanjivani University
+Subject / Unit	Unit 1: Introduction to Networking and Data Communication
+ 
+1. Aim
+To design and configure a Local Area Network (LAN) using Cisco Packet Tracer with 1 router, 2 switches, and 4 PCs, assign static IP addresses, and verify communication between devices using the ping command.
+2. Objectives
+•	Create a LAN topology using one router, two switches, and four PCs.
+•	Connect the devices using appropriate Ethernet connections.
+•	Configure static IPv4 addresses on all PCs.
+•	Configure the router interfaces for communication between the two networks.
+•	Test connectivity by sending ping packets between PCs connected through different switches.
+3. Devices / Components Used
+•	Cisco 2911 Router – 1
+•	Cisco 2960-24TT Switch – 2
+•	PC-PT – 4
+•	Copper Ethernet cables
+•	Cisco Packet Tracer
+4. Network Topology
+The following topology was created in Cisco Packet Tracer. The router connects the two switches, and each switch connects two PCs.
+ 
+
+5. IP Addressing
+The addressing used for the two LAN segments is shown below. The gateway addresses represent the router interfaces for the corresponding networks.
+Device	IP Address	Subnet Mask	Default Gateway
+PC0	192.168.1.2	255.255.255.0	192.168.1.1
+PC1	192.168.1.3	255.255.255.0	192.168.1.1
+PC2	192.168.2.2	255.255.255.0	192.168.2.1
+PC3	192.168.2.3	255.255.255.0	192.168.2.1
+6. Configuration Procedure
+Step 1 – Place the devices
+Open Cisco Packet Tracer and place one 2911 router, two 2960 switches, and four PCs in the workspace.
+Step 2 – Connect the devices
+Connect Router1 to both switches. Connect PC0 and PC1 to Switch0, and PC2 and PC3 to Switch1 using Ethernet cables.
+Step 3 – Configure the PCs
+For each PC, open Desktop → IP Configuration and select Static. Enter the IP address, subnet mask, and default gateway according to the addressing table above.
+Step 4 – Configure the router
+Configure the two router interfaces with 192.168.1.1/24 and 192.168.2.1/24 respectively, then enable the interfaces using the no shutdown command.
+Step 5 – Verify connectivity
+Open a PC command prompt and use the ping command to test communication. A successful reply confirms that packets are reaching the destination.
+7. Connectivity Test
+A ping test was performed to verify communication with the PC having IP address 192.168.2.2. The result shows four replies received, zero packets lost, and an average response time of approximately 1 ms.
+
+
+8. Result
+The LAN topology was successfully created in Cisco Packet Tracer. Static IP addresses were assigned to the PCs, and connectivity was verified using the ping command. The successful ping with 0% packet loss demonstrates that the configured devices can communicate across the network.
+9. Conclusion
+This mini-project demonstrates the basic operation of a routed LAN using Cisco Packet Tracer. It provides practical understanding of IP addressing, switching, routing, default gateways, and network connectivity testing.
+
